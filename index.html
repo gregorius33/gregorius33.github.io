@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 | Introduce Myself</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">Portfolio</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">홈</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#experience">경력/학력</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">안녕하세요</p>
+      <h1 class="hero-title">저는 <span class="highlight" id="typedName"></span>입니다</h1>
+      <p class="hero-desc">CRM · BI 컨설팅과 유통 IT 분야에서 30년 이상 경험을 쌓아온 컨설턴트입니다.</p>
+      <a href="#about" class="btn-primary">더 알아보기</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-placeholder">
+            <span>사진</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>자기소개</h3>
+          <p>
+            이 해 구(Lee, Hae-Gu)는 유통 서비스 및 제조업 분야에서 CRM 전략·정책 수립과
+            BI 컨설팅을 수행해 온 컨설턴트입니다. UNIX 시스템 엔지니어와 유통업 시스템
+            개발자로 커리어를 시작해, CRM 컨설팅팀장과 유통업 컨설턴트를 거쳐 현재는
+            주식회사 인베니오의 대표이사로서 다양한 CRM &amp; BI 프로젝트를 이끌고 있습니다.
+            프로젝트 관리 전문자격(PMP)을 보유하고 있으며, 여러 대학에서 CRM·ERP·디지털
+            경영전략 관련 강의를 진행해 온 실무·이론 경험을 겸비한 전문가입니다.
+          </p>
+          <ul class="about-list">
+            <li><strong>이름</strong> : 이 해 구 (Lee, Hae-Gu)</li>
+            <li><strong>생년월일</strong> : 1966년 11월 16일</li>
+            <li><strong>성별</strong> : 남</li>
+            <li><strong>학사</strong> : 우주과학과 (Astronomy and Space Science) 이학학사, 경희대학교</li>
+            <li><strong>석사</strong> : 경영학 석사(MBA), 성균관대학교 경영전문대학원</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기술 섹션 -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tech</h2>
+      <p class="section-desc">CRM, BI, 유통IT, 프로젝트 관리 등 주요 역량을 정리했습니다.</p>
+      <div class="skill-tags" id="skillTags">
+        <span class="skill-tag">CRM 전략/정책</span>
+        <span class="skill-tag">BI / 데이터 분석</span>
+        <span class="skill-tag">유통업 IT 컨설팅</span>
+        <span class="skill-tag">프로젝트 관리 (PMP)</span>
+        <span class="skill-tag">UNIX 시스템 엔지니어링</span>
+        <span class="skill-tag">ISP · BPR/PI 컨설팅</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>HTML/CSS</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>JavaScript</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-label">
+            <span>협업/소통</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경력/학력 섹션 -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2009.03 – 현재</span>
+            <h3>대표이사 / 대표컨설턴트, 주식회사 인베니오</h3>
+            <p>
+              유통서비스/제조업 CRM 전략·정책 컨설팅, ISP 컨설팅, BPR/PI 컨설팅 수행.<br>
+              CRM &amp; BI 관련 컨설팅 및 구축.<br>
+              CRM &amp; BI 관련 솔루션 개발/공급.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2009.02</span>
+            <h3>성균관대학교 경영전문대학원</h3>
+            <p>경영학석사(MBA) 취득.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2006 – 2009.02</span>
+            <h3>유통업 컨설턴트, 한국후지쯔 산업유통SI컨설팅사업부</h3>
+            <p>
+              유통업종 Pre-Sales 및 PM 업무 담당 (할인점, 편의점, 전문점, 레저업 등)<br>
+              솔루션 기획/관리 담당 (CRM/FSP, DWH, BI, 수요/매출 예측 등)<br>
+              ISP 및 CRM 전략 컨설팅 수행<br>
+              전사 경영개혁위원회 Team Leader로 활동.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2002 – 2006</span>
+            <h3>CRM 컨설턴트, 한국후지쯔 CRM사업부</h3>
+            <p>
+              CRM 컨설팅팀 팀장 (Pre-Sales 및 프로젝트 수행 총괄)<br>
+              CRM 솔루션, ‘Pivotal CRM Suite’ 국내 launching 총괄 (제품 검토, 시장조사/마케팅, Localization)<br>
+              영업기획 및 마케팅 업무 수행 (세미나, 언론매체 기고, 관련 단체 활동 등)<br>
+              SFA, Marketing 자동화, PRM, Call Center 등 프로젝트 총괄 PM 및 관리 업무 수행<br>
+              협력사 관리 (발굴/육성, 협업, 실적관리 등) 업무 수행
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2001</span>
+            <h3>유통 솔루션 기획 및 SE 관리, 한국후지쯔 유통솔루션비전팀</h3>
+            <p>
+              유통 솔루션 기획/발굴 및 정비 업무 담당<br>
+              국내 협력업체 관리 및 해외(일본 후지쯔, 영국 ICL) 창구 업무 담당<br>
+              일반 관리(SE 육성, 프로젝트 수행 관리, 목표/실적, 업무 프로세스 관리, 자원관리 등) 업무 담당
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1993 – 2000</span>
+            <h3>유통업 SE 및 개발자, 한국후지쯔 유통시스템과</h3>
+            <p>
+              한국후지쯔 입사 (공채 20기 신입)<br>
+              시스템 엔지니어 업무 수행<br>
+               - UNIX System Engineer (Operation System, Network Interface, Job Scheduling 등)<br>
+               - System Programmer (System Program(Kernel), Network Program(UUCP, FNA, X.25, TCP/IP))<br>
+              유통업 개발 프로젝트 수행 (PM/PL/PG)<br>
+               - 테마파크 : 영업관리, Ticket/상품/식음 POS<br>
+               - 편의점 : 본부매입, ABC 분석, 점포영업관리 등<br>
+               - 전문점 : 점포통신, 점포관리 등<br>
+               - 백화점/할인점/마트 : POS, 영업관리, 제휴카드, 다점포 본부연계 등<br>
+               - 온라인 쇼핑몰 : 식료품 홈쇼핑
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1992.07</span>
+            <h3>공군 중위 전역</h3>
+            <p>공군 사관후보생(학사장교) 85기 입대 후, 항공기상대 기상예보장교 및 상황실 작전상황장교로 근무.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1989.02</span>
+            <h3>경희대학교</h3>
+            <p>우주과학과 졸업 (Astronomy and Space Science), 이학학사.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-desc">이메일과 전화번호를 통해 연락하실 수 있습니다.</p>
+      <div class="contact-cards">
+        <a href="mailto:Greg@invenio.kr" class="contact-card">
+          <span class="contact-icon">✉</span>
+          <span class="contact-label">이메일</span>
+          <span class="contact-value">Greg@invenio.kr</span>
+        </a>
+        <a href="tel:010-6220-2058" class="contact-card">
+          <span class="contact-icon">📱</span>
+          <span class="contact-label">연락처</span>
+          <span class="contact-value">010-6220-2058</span>
+        </a>
+        <a href="#" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-icon">🔗</span>
+          <span class="contact-label">GitHub / SNS</span>
+          <span class="contact-value">링크 주소</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> Portfolio. HTML, CSS, JavaScript로 제작.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
